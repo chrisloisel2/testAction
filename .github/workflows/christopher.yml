@@ -1,1 +1,38 @@
+name: Christopher Workflow
+on:
+  push:
+	branches: [ main ]
 
+jobs:
+  build:
+	runs-on: ubuntu-latest
+	steps:
+	  - name: Checkout
+
+	  - name: Setup Node.js
+
+	  - name: Install dependencies
+
+	  - name: Build
+
+  Test:
+	runs-on: ubuntu-latest
+	steps:
+	  - name: Checkout
+
+	  - name: Setup Node.js
+
+	  - name: Install dependencies
+
+	  - name: Test
+
+  Deploy:
+	runs-on: ubuntu-latest
+	steps:
+	  - name: Checkout
+
+	  - name: Setup Node.js
+
+	  - name: Install dependencies
+
+	  - name: Deploy
