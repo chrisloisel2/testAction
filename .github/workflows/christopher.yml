@@ -9,7 +9,7 @@ jobs:
 	steps:
 	  - name: Checkout
 
-	  - name: Setup Node.js
+	  - name: Setup
 
 	  - name: Install dependencies
 
