@@ -1,38 +1,60 @@
 name: Christopher Workflow
 on:
-  push:
-	branches: [ main ]
-
+    push:
+        branches: [main]
 jobs:
-  build:
-	runs-on: ubuntu-latest
-	steps:
-	  - name: Checkout
+    buildApp:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              run: |
+                  echo "Checking out" >> file.txt
+            - name: installer Node
+              run: |
+                  echo "Installing Node" >> file.txt
+            - name: installer Angular
+              run: |
+                  echo "Installing Angular" >> file.txt
+            - name:  telecharger des dependances
+              run: |
+                  echo "telecharger des dependances" >> file.txt
+            - name:  build
+              run: |
+                  echo "build" >> file.txt
+    TesterAPP:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              run: |
+                  echo "Checking out" >> file.txt
+            - name: installer Node
+              run: |
+                  echo "Installing Node" >> file.txt
+            - name: installer Angular
+              run: |
+                  echo "Installing Angular" >> file.txt
+            - name:  telecharger des dependances
+              run: |
+                  echo "telecharger des dependances" >> file.txt
+            - name:  build
+              run: |
+                  echo "build" >> file.txt
+    DeployerApp:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              run: |
+                  echo "Checking out" >> file.txt
+            - name: installer Node
+              run: |
+                  echo "Installing Node" >> file.txt
+            - name: installer Angular
+              run: |
+                  echo "Installing Angular" >> file.txt
+            - name:  telecharger des dependances
+              run: |
+                  echo "telecharger des dependances" >> file.txt
+            - name:  build
+              run: |
+                  echo "build" >> file.txt
 
-	  - name: Setup Node.js
-
-	  - name: Install dependencies
-
-	  - name: Build
-
-  Test:
-	runs-on: ubuntu-latest
-	steps:
-	  - name: Checkout
-
-	  - name: Setup Node.js
-
-	  - name: Install dependencies
-
-	  - name: Test
-
-  Deploy:
-	runs-on: ubuntu-latest
-	steps:
-	  - name: Checkout
-
-	  - name: Setup Node.js
-
-	  - name: Install dependencies
-
-	  - name: Deploy
